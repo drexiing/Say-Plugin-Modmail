@@ -10,4 +10,4 @@ class Sync(commands.Cog):
         await ctx.send("Comandos de aplicación sincronziados.")
          
 async def setup(bot: commands.Bot):
-    await bot.add_cog(Say(bot))
+    await bot.add_cog(Sync(bot))
