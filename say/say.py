@@ -47,4 +47,4 @@ class Say(commands.Cog):
         await channel.send(content)
          
 async def setup(bot: commands.Bot):
-    bot.add_cog(Say(bot))
+    await bot.add_cog(Say(bot))
