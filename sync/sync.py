@@ -6,7 +6,7 @@ class Sync(commands.Cog):
 
     @commands.command()
     async def sync(self, ctx):
-        await bot.tree.sync()
+        await self.bot.tree.sync()
         await ctx.send("Comandos de aplicación sincronziados.")
          
 async def setup(bot: commands.Bot):
