@@ -4,6 +4,7 @@ class Say(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+    @commands.has_permissions(administrator=True)
     @commands.command()
     async def say(self, ctx, channel_or_message=None, *, message=None):
         if not (channel_or_message or message):

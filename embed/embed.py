@@ -5,7 +5,8 @@ from urllib.parse import urlparse
 class Embed(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        
+    
+    @commands.has_permissions(administrator=True)
     @commands.command()
     async def embed(self, ctx, channel: discord.TextChannel = None):
         try:

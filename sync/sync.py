@@ -4,6 +4,7 @@ class Sync(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+    @commands.has_permissions(administrator=True)
     @commands.command()
     async def sync(self, ctx):
         await self.bot.tree.sync()
